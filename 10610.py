@@ -12,5 +12,6 @@ if(jarisuhab%3==0 and N.count(0)>=1):
         print(i, end='')
 else:
     print(-1)
+    
 
 

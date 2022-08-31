@@ -23,4 +23,5 @@ if(minPrice6<minPirce1*6):
 else:
     paymoney += minPirce1*N
 print(paymoney)
+
         

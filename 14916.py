@@ -13,3 +13,4 @@ else:
     cnt += n//5
     cnt += (n%5)//2
     print(cnt)
+    

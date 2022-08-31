@@ -15,4 +15,5 @@ for i in location_list[1:]:
         start = i
         count += 1
 print(count)
+
     

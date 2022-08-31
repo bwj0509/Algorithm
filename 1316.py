@@ -16,3 +16,4 @@ for _ in range(N):
         cnt += 1
         
 print(cnt)
+

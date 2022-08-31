@@ -17,6 +17,7 @@ for _ in range(int(sys.stdin.readline())):
             cnt +=1
             
     print(cnt)
+    
 
 
 
