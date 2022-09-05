@@ -1,21 +1,18 @@
 import sys
 
-N, M = map(int, sys.stdin.readline().split())
 L = []
 
-for i in range(N):
-    tmp = list(map(str, sys.stdin.readline().rstrip().split()))
+N, M = map(int, sys.stdin.readline().split())
 
-    for i in tmp:
-        L.append(int(i))
+for _ in range(N):
+    L += list(map(int, sys.stdin.readline().rstrip().split()))
 
-
-for i in range(M):
-    x1, x2, y1, y2 = map(int, sys.stdin.readline().split())
-
-    start_point = N*(x1-1) + x2
-    end_point = N*(y1-1) + y2
+for _ in range(M):  
     sum = 0
-    for i in range(start_point, end_point+1):
-        sum += L[i-1]
+    x1, y1, x2, y2 = map(int, sys.stdin.readline().split())
+    start = (x1-1)*N+(y1-1)
+    end = (x2-1)*N+(y2-1)
+
+    for i in range(start, end+1):
+        sum += L[i]
     print(sum)
